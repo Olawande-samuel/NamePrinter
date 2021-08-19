@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Print Name</title>
+    <style media="screen">
+      body {
+        background-image: url("./bg.jpg");
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+      }
+      a {
+        color: #eee;
+        transition: background-color 0.5s ease;
+        text-decoration: none;
+      }
+      a:hover {
+        background-color: #372712;
+        padding: 8px 6px;
+      }
+      .wrapper {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      h1 {
+        text-align: center;
+        color: #170705;
+        font-size: 40px;
+      }
+      p {
+        font-size: 18px;
+        color: #ddd;
+        font-weight: bold;
+        text-align: center;
+      }
+      button {
+        padding: 12px;
+        border: none;
+        outline: none;
+        background-color: #372712;
+        color: white;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="wrapper">
+      <header>
+        <h1>HNG Stage 2 Task</h1>
+      </header>
+      <p>My Name is <span></span></p>
+
+      <button type="button" name="button">PRINT</button>
+    </section>
+    <script type="text/javascript">
+      const nameValue = document.querySelector("span");
+      const button = document
+        .querySelector("button")
+        .addEventListener("click", () => {
+          nameValue.innerHTML = `Olawande Akinmosin.  <a href="https://olawande-samuel.github.io/zuriResume/">Click here to find out more about me</a>`;
+        });
+    </script>
+  </body>
+</html>
